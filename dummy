@@ -1,0 +1,26 @@
+// static updateMovies = async (id, movieData, next) => {
+//         const {id: movieId, title, genres, year} = movieData;
+
+//         if(!movieid || !title || !genres || !year){
+//             return next({
+//                 name: "paramsError"
+//             })
+//         }
+
+//         const query = 
+//         `UPDATE movies
+//         SET id = $1,
+//         title = $2,
+//         genres = $3
+//         year = $4
+//         WHERE id = $5
+//         `
+//         try{
+//             const data = await pool.query(query, [movieId, title, genres, year])
+//             return data.rows[0]
+//         } catch(err) {
+//             next (err)
+//         }    
+//     }
+
+// UPDATE movies SET genres = $1 WHERE id = $2
